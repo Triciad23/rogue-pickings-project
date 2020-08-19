@@ -1,0 +1,116 @@
+/***** Base Styles *****/
+body {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+/***** Grid *****/
+.full-width {
+  margin: 0 auto;
+  overflow: auto;
+  width: 1200px;
+}
+.half-width {
+  float: left;
+  width: 600px;
+}
+.third-width {
+  float: left;
+  width: 400px;
+}
+/***** Header *****/
+header h1 {
+  color: #77a466;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0px 0 15px 0px;
+  text-transform: uppercase;
+}
+nav {
+  float: right;
+  padding: 15px 25px;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  color: #77a466;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#hero-img {
+  border-top: 4px solid #77a466;
+  border-bottom: 4px solid #77a466;
+}
+/***** About *****/
+#about h3 {
+  color: #77a466;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  padding: 10px 0 10px 0px;
+  text-transform: uppercase;
+}
+#about p {
+  font-size: 16px;
+  line-height: 25px;
+  padding: 10px 0px 40px 0px;
+}
+/***** Menu-Review-Contact *****/
+#info-content {
+  border-bottom: 1px solid #9b9b9b;
+  border-top: 1px solid #9b9b9b;
+}
+.borders {
+  border-left: 1px solid #9b9b9b;
+  border-right: 1px solid #9b9b9b;
+  margin-left: -1px;
+  margin-right: -1px;
+}
+.third-width h4 {
+  font-size: 12px;
+  font-weight: 900;
+  margin-top: 20px;
+  padding: 10px 25px 0px 25px;
+  text-align: left;
+  text-transform: uppercase;
+}
+#menu p {
+  color: #77a466;
+  font-size: 16px;
+  padding-left: 25px;
+}
+
+#reviews p {
+  font-size: 16px;
+  line-height: 21px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+#contact h4 {
+  padding-bottom: 10px;
+}
+#contact p {
+  font-size: 16px;
+  line-height: 10px;
+  padding-left: 25px;
+}
+
+/***** Footer *****/
+
+footer h4 {
+  font-size: 16px;
+  font-weight: bolder;
+  padding: 25px 0px 25px 0px;
+  text-align: center;
+  text-transform: uppercase;
+}
+footer h4 span {
+  color: #77a466;
+  font-family: "galada", cursive;
+  font-style: italic;
+  text-transform: lowercase;
+  font-weight: normal;
+}

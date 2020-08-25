@@ -94,7 +94,7 @@ nav ul li a {
   padding: 10px 0px 40px 0px;
 }
 .main-title {
-  border-bottom: #77a466 1px solid;
+  border-bottom: #9b9b9b 1px solid;
 }
 /***** Menu-Review-Contact *****/
 .section-one {
@@ -108,10 +108,6 @@ nav ul li a {
 .section-three {
   border-bottom: #9b9b9b 0.5px solid;
   width: 100%;
-}
-#info-content {
-  border-bottom: 1px solid #9b9b9b;
-  border-top: 1px solid #9b9b9b;
 }
 .borders {
   border-left: 1px solid #9b9b9b;
@@ -163,4 +159,53 @@ footer h4 span {
   font-style: italic;
   text-transform: lowercase;
   font-weight: normal;
+}
+
+/***** BreakPoints *****/
+
+@media all and (min-width: 768px) {
+  /* Tablet styles here */
+  .bottom-section {
+    border-bottom: #9b9b9b 1px solid;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: row nowrap;
+  }
+  .section-one {
+    border-bottom: none;
+    width: 33%;
+  }
+  .section-two {
+    border-bottom: none;
+    border-left: #9b9b9b 0.5px solid;
+    border-right: #9b9b9b 0.5px solid;
+    width: 33%;
+  }
+  .section-three {
+    border-bottom: none;
+    width: 33%;
+  }
+  h4 {
+    padding-left: 25px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  /* Desktop styles here */
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav ul li {
+    padding: 15px;
+  }
+  header {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    padding-top: 25px;
+  }
+  header h1 {
+  padding-right: 300px;
+  padding-left: 0px;
+  border-bottom:none;
 }

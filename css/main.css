@@ -1,64 +1,114 @@
-/***** Base Styles *****/
+/***** Base Styles & Flex Grid *****/
+html {
+  font-size: 16px;
+}
 body {
   color: black;
   font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-/***** Grid *****/
-.full-width {
-  margin: 0 auto;
-  overflow: auto;
-  width: 1200px;
+.container {
+  max-width: 1200px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
-.half-width {
-  float: left;
-  width: 600px;
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
 }
-.third-width {
-  float: left;
-  width: 400px;
+.top-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.bottom-section {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
 }
 /***** Header *****/
+
 header h1 {
   color: #77a466;
-  font-size: 30px;
+  font-size: 1.875em;
   font-weight: bold;
   padding: 0px 0 15px 0px;
   text-transform: uppercase;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  border-bottom: #77a466 2px solid;
 }
 nav {
-  float: right;
-  padding: 15px 25px;
+  width: 100%;
+}
+ul {
+  padding: 0px;
 }
 nav ul li {
-  display: inline-block;
+  flex-flow: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5em;
 }
 nav ul li a {
   color: #77a466;
-  font-size: 14px;
+  font-size: 1em;
   font-weight: bold;
-  padding-left: 15px;
   text-decoration: none;
   text-transform: uppercase;
 }
 #hero-img {
   border-top: 4px solid #77a466;
   border-bottom: 4px solid #77a466;
+  width: 100%;
 }
 /***** About *****/
 #about h3 {
   color: #77a466;
-  font-size: 18px;
-  font-weight: normal;
-  letter-spacing: 1px;
+  font-size: 1.125em;
+  font-weight: bold;
   padding: 10px 0 10px 0px;
   text-transform: uppercase;
 }
 #about p {
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 1em;
+  line-height: 1.5em;
   padding: 10px 0px 40px 0px;
 }
+.main-title {
+  border-bottom: #77a466 1px solid;
+}
 /***** Menu-Review-Contact *****/
+.section-one {
+  border-bottom: #9b9b9b 0.5px solid;
+  width: 100%;
+}
+.section-two {
+  border-bottom: #9b9b9b 0.5px solid;
+  width: 100%;
+}
+.section-three {
+  border-bottom: #9b9b9b 0.5px solid;
+  width: 100%;
+}
 #info-content {
   border-bottom: 1px solid #9b9b9b;
   border-top: 1px solid #9b9b9b;
@@ -70,7 +120,7 @@ nav ul li a {
   margin-right: -1px;
 }
 .third-width h4 {
-  font-size: 12px;
+  font-size: 1em;
   font-weight: 900;
   margin-top: 20px;
   padding: 10px 25px 0px 25px;
@@ -79,12 +129,12 @@ nav ul li a {
 }
 #menu p {
   color: #77a466;
-  font-size: 16px;
+  font-size: 1em;
   padding-left: 25px;
 }
 
 #reviews p {
-  font-size: 16px;
+  font-size: 1em;
   line-height: 21px;
   padding-left: 25px;
   padding-right: 25px;
@@ -93,7 +143,7 @@ nav ul li a {
   padding-bottom: 10px;
 }
 #contact p {
-  font-size: 16px;
+  font-size: 1em;
   line-height: 10px;
   padding-left: 25px;
 }
@@ -101,7 +151,7 @@ nav ul li a {
 /***** Footer *****/
 
 footer h4 {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: bolder;
   padding: 25px 0px 25px 0px;
   text-align: center;
